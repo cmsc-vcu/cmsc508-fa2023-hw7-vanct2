@@ -81,14 +81,14 @@ CREATE TABLE people (
 # Their last names must exactly be “Person 1”, “Person 2”, etc.
 # Other fields are for you to assign.
 
-insert into people (people_id,people_last_name people_email, people_linkedin_url, people_discord_handle, people_phone_number, people_date_joined) values 
-
-    (1, 'Van', 'Person 1', 'van.person1@example.com', 'linkedin.com/van.person1', 'van#1234', '+1234567890', '2023-01-01'),
-    (2, 'Alice', 'Person 2', 'alice.person2@example.com', 'linkedin.com/alice.person2', 'Alice#5678', '+2345678901', '2023-02-15'),
-    (3, 'Bob', 'Person 3', 'bob.person3@example.com', 'linkedin.com/bob.person3', 'Bob#9101', '+3456789012', '2023-03-20'),
-    (4, 'Eva', 'Person 4', 'eva.person4@example.com', 'linkedin.com/eva.person4', 'Eva#1122', '+4567890123', '2023-04-25'),
-    (5, 'Michael', 'Person 5', 'michael.person5@example.com', 'linkedin.com/michael.person5', 'Michael#3344', '+5678901234', '2023-05-30'),
-    (6, 'Sophia', 'Person 6', 'sophia.person6@example.com', 'linkedin.com/sophia.person6', 'Sophia#5566', '+6789012345', '2023-06-15');
+INSERT INTO people (people_id, people_first_name, people_last_name, people_email, people_linkedin_url, people_headshot_url, people_discord_handle, people_brief_bio, people_date_joined)
+VALUES
+    (1, 'Van', 'Person 1', 'van.person1@example.com', 'linkedin.com/van.person1', 'headshot.com/van.person1.jpg', 'Van#1234', 'Passionate about technology and innovation.', '2023-01-01'),
+    (2, 'Alice', 'Person 2', 'alice.person2@example.com', 'linkedin.com/alice.person2', 'headshot.com/alice.person2.jpg', 'Alice#5678', 'Creative thinker with a love for design.', '2023-02-15'),
+    (3, 'Bob', 'Person 3', 'bob.person3@example.com', 'linkedin.com/bob.person3', 'headshot.com/bob.person3.jpg', 'Bob#9101', 'Data enthusiast and analytics expert.', '2023-03-20'),
+    (4, 'Eva', 'Person 4', 'eva.person4@example.com', 'linkedin.com/eva.person4', 'headshot.com/eva.person4.jpg', 'Eva#1122', 'Public speaking champion and communication expert.', '2023-04-25'),
+    (5, 'Michael', 'Person 5', 'michael.person5@example.com', 'linkedin.com/michael.person5', 'headshot.com/michael.person5.jpg', 'Michael#3344', 'Fluent in multiple languages with a passion for diversity.', '2023-05-30'),
+    (6, 'Sophia', 'Person 6', 'sophia.person6@example.com', 'linkedin.com/sophia.person6', 'headshot.com/sophia.person6.jpg', 'Sophia#5566', 'Problem solver and time management guru.', '2023-06-15');
 
 # Section 6
 # Create peopleskills( id, skills_id, people_id, date_acquired )
